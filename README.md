@@ -4,6 +4,16 @@
 
 ### Project Title: Enrollment and Withdrawal Trends Analysis at UCW Using AWS
 
+## Table of Contents
+
+
+- [Project Description](#project-description)
+- [Dataset](#dataset)
+- [Objective](#objective)
+- [Methodology](#methodology)
+- [Tools and Technologies](#tools-and-technologies)
+- [Deliverables](#deliverables)
+
 **Project Description:**  
 This project aims to perform an exploratory data analysis (EDA) of the University's Enrollment and Withdrawal dataset using AWS services to uncover insights related to student enrollment patterns, program distribution, and retention rates. By leveraging AWS tools such as S3, AWS Glue, and Athena, we explore trends based on features like gender, academic programs, and enrollment status. This project demonstrates how cloud-based services streamline large-scale data analysis and visualization.
 
