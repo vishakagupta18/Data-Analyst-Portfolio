@@ -1,62 +1,74 @@
-# Data Analysis Projects
+# Projects
 
-## Exploratory Data Analysis
+## [Project 1: Exploratory Data Analysis Using AWS Services](https://www.google.com)
 
-### Project Title: Surviving the Titanic: An Exploratory Data Analysis
+### Project Title: Enrollment and Withdrawal Trends Analysis at UCW Using AWS
 
 **Project Description:**  
-The primary goal of this project is to perform an exploratory data analysis (EDA) on the Titanic dataset to uncover patterns, trends, and insights related to passenger survival. By analyzing various features such as age, gender, class, and fare, we aim to understand the factors that influenced the likelihood of survival during the Titanic disaster.
+This project aims to perform an exploratory data analysis (EDA) of the University's Enrollment and Withdrawal dataset using AWS services to uncover insights related to student enrollment patterns, program distribution, and retention rates. By leveraging AWS tools such as S3, AWS Glue, and Athena, we explore trends based on features like gender, academic programs, and enrollment status. This project demonstrates how cloud-based services streamline large-scale data analysis and visualization.
 
 ### Dataset:
-The Titanic dataset consists of passenger information from the ill-fated voyage of the RMS Titanic, including details such as:
-- **Passenger ID**: Unique identifier for each passenger
-- **Survived**: Survival status (0 = No, 1 = Yes)
-- **Pclass**: Passenger class (1st, 2nd, 3rd)
-- **Name**: Name of the passenger
-- **Sex**: Gender of the passenger
-- **Age**: Age of the passenger
-- **SibSp**: Number of siblings/spouses aboard
-- **Parch**: Number of parents/children aboard
-- **Ticket**: Ticket number
-- **Fare**: Fare paid by the passenger
-- **Embarked**: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
+The dataset contains student information from the University of Canada West (UCW), with details such as:
+- **StudentID**: Unique identifier for each student.
+- **FirstName**: First name of the student.
+- **LastName**: Last name of the student.
+- **DateOfBirth**: Date of birth of the student.
+- **Gender**: Gender of the student.
+- **Program**: The academic program in which the student is enrolled.
+- **EnrollmentDate**: The date when the student enrolled.
+- **ExpectedGraduationDate**: The expected graduation date for the student.
+- **Status**: Enrollment status (Enrolled, Graduated).
+- **Email**: Contact email of the student.
 
 ### Objective:
-Perform an exploratory data analysis to uncover key insights related to survival rates on the Titanic.
+The objective is to analyze student enrollment and withdrawal patterns using AWS services, gaining insights into student demographics, program distribution, and factors influencing graduation and retention rates.
 
 ### Methodology:
 
 1. **Data Collection and Preparation**:
-   - Load the Titanic dataset using Python libraries like Pandas.
-   - Perform initial data cleaning, which includes handling missing values, correcting data types, and renaming columns for clarity.
+   - **Data Storage**: Upload the dataset to an Amazon S3 bucket for secure and scalable storage.
+   - **Data Cleaning and Transformation**:
+     - Use **AWS Glue** to create an ETL pipeline to clean the dataset, handle missing values, and format date columns (`DateOfBirth`, `EnrollmentDate`, `ExpectedGraduationDate`) for analysis.
+     - Convert the data into a queryable format (e.g., Parquet) for optimized performance.
+   - **AWS Glue Catalog**: Create a data catalog to manage metadata and make data easily discoverable for querying.
 
 2. **Descriptive Statistics**:
-   - Generate summary statistics (mean, median, mode) for numerical features (like Age and Fare) and frequency distributions for categorical features (like Pclass and Sex).
+   - Use **AWS Athena** to run SQL queries on the dataset stored in S3, generating summary statistics:
+     - Calculate the average age of students based on `DateOfBirth`.
+     - Count students per program and per enrollment status (Enrolled, Graduated).
+     - Calculate the distribution of enrollment dates to observe academic cycles.
 
 3. **Data Visualization**:
-   - Create visualizations to illustrate key insights:
-     - **Histograms and Boxplots**: Analyze the distribution of continuous variables like Age and Fare.
-     - **Bar Charts**: Showcase survival rates across different categories (e.g., Sex, Pclass).
-     - **Heatmaps**: Visualize correlations between numerical variables.
+   - **Amazon QuickSight** for interactive data visualization:
+     - **Bar Charts**: Display student counts across programs like MBA, MA, BA, and BCom, and visualize the enrollment status breakdown (Enrolled vs. Graduated).
+     - **Pie Charts**: Visualize the gender distribution of students.
+     - **Line Charts**: Plot enrollment trends over time, showing how many students enrolled in each semester.
+     - **Stacked Bar Charts**: Explore program-wise gender distribution and their corresponding enrollment status to determine retention trends.
 
-4. **Survival Analysis**:
-   - Compare survival rates:
-     - **By gender**: Determine if there is a significant difference in survival rates between male and female passengers.
-     - **By class**: Analyze how passenger class affected survival chances.
-     - **By age group**: Create age bins to assess survival across different age demographics.
+4. **Enrollment and Graduation Trends Analysis**:
+   - Use **Athena** to compare enrollment and graduation rates across programs and genders:
+     - **Program Trends**: Identify which programs (MBA, MA, BA) show higher graduation rates.
+     - **Gender Analysis**: Analyze whether male or female students tend to graduate at higher rates.
+     - **Year-over-Year Analysis**: Track how enrollment has changed over time, identifying any trends or anomalies.
 
 5. **Insights and Findings**:
-   - Summarize the findings based on data visualizations and statistical analyses, highlighting notable trends and patterns (e.g., women and children had higher survival rates, first-class passengers had a significant survival advantage).
+   - Summarize key insights based on the data exploration:
+     - **Program-specific Analysis**: MBA and Leadership programs show high enrollment, while some programs may have lower graduation rates.
+     - **Gender-based Patterns**: Gender distribution may show differences in enrollment trends.
+     - **Enrollment Growth**: Year-over-year enrollment analysis may highlight academic cycles and potential areas for university outreach.
 
 6. **Conclusion**:
-   - Discuss the implications of the findings and suggest further analyses or data-driven decisions that could be explored, such as building predictive models to classify survival based on passenger features.
+   - Discuss actionable insights, such as identifying programs with low retention and suggesting strategies for improvement.
+   - Highlight how AWS services streamlined the data pipeline, from storage to analysis and visualization.
+   - Future analysis could include predictive modeling using **AWS SageMaker** to predict student retention based on historical trends.
 
 ### Tools and Technologies:
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-- Jupyter Notebook for interactive data exploration
-- Any additional data visualization tools like Tableau or Power BI (optional)
+- **AWS S3** for data storage.
+- **AWS Glue** for data cleaning, transformation, and cataloging.
+- **AWS Athena** for SQL-based querying and analysis.
+- **Amazon QuickSight** for creating interactive dashboards and data visualizations.
 
 ### Deliverables:
-- A comprehensive Jupyter Notebook containing all steps of the analysis, including code, visualizations, and narrative explanations of findings.
-- A presentation summarizing key insights and visualizations for stakeholders or peers.
-
+- A comprehensive AWS Glue ETL pipeline documented in a Jupyter Notebook or **Glue Job** code.
+- SQL queries used in **AWS Athena** to analyze the dataset.
+- A presentation summarizing the insights and findings for university stakeholders or peers.
