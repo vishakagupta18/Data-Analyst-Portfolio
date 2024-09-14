@@ -15,10 +15,10 @@
 - [Tools and Technologies](#tools-and-technologies)
 - [Deliverables](#deliverables)
 
-### Project Description: ###
+#### Project Description: ####
 This project aims to perform an exploratory data analysis (EDA) of the University's Enrollment and Withdrawal dataset using AWS services to uncover insights related to student enrollment patterns, program distribution, and retention rates. By leveraging AWS tools such as S3, AWS Glue, and Athena, we explore trends based on features like gender, academic programs, and enrollment status. This project demonstrates how cloud-based services streamline large-scale data analysis and visualization.
 
-### Dataset:
+#### Dataset:
 The dataset contains student information from the University of Canada West (UCW), with details such as:
 - **StudentID**: Unique identifier for each student.
 - **FirstName**: First name of the student.
@@ -31,10 +31,10 @@ The dataset contains student information from the University of Canada West (UCW
 - **Status**: Enrollment status (Enrolled, Graduated).
 - **Email**: Contact email of the student.
 
-### Objective:
+#### Objective:
 The objective is to analyze student enrollment and withdrawal patterns using AWS services, gaining insights into student demographics, program distribution, and factors influencing graduation and retention rates.
 
-### Methodology:
+#### Methodology:
 
 1. **Data Collection and Preparation**:
    - **Data Storage**: Upload the dataset to an Amazon S3 bucket for secure and scalable storage.
@@ -73,13 +73,13 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
    - Highlight how AWS services streamlined the data pipeline, from storage to analysis and visualization.
    - Future analysis could include predictive modeling using **AWS SageMaker** to predict student retention based on historical trends.
 
-### Tools and Technologies:
+#### Tools and Technologies:
 - **AWS S3** for data storage.
 - **AWS Glue** for data cleaning, transformation, and cataloging.
 - **AWS Athena** for SQL-based querying and analysis.
 - **Amazon QuickSight** for creating interactive dashboards and data visualizations.
 
-### Deliverables:
+#### Deliverables:
 - A comprehensive AWS Glue ETL pipeline documented in a Jupyter Notebook or **Glue Job** code.
 - SQL queries used in **AWS Athena** to analyze the dataset.
 - A presentation summarizing the insights and findings for university stakeholders or peers.
