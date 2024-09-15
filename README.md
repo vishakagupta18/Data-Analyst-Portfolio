@@ -93,10 +93,11 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
 
 #### Table of Contents ####
 
-- [Project Description](#project-description)
-- [Dataset](#dataset)
+- [Project Overview](#project-overview)
+- [Key Features of the Dataset](#Key-Features-of-the-Dataset)
 - [Objective](#objective)
-- [Methodology](#methodology)
+- [AWS Architecture](#AWS-Architecture)
+- [Insights & Findings](#Insights-&-Findings)
 - [Tools and Technologies](#tools-and-technologies)
 - [Deliverables](#deliverables)
 
