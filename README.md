@@ -2,7 +2,7 @@
 
 ## [Project 1: Exploratory Data Analysis Using AWS Services](https://www.google.com)
 
-### Project Title: Enrollment and Withdrawal Trends Analysis at UCW Using AWS
+### Project Title: Enrollment and Withdrawal Trends Analysis at University Canada West Using AWS
 
 ![Data Exploration Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
 
