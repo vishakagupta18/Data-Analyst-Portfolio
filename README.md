@@ -83,3 +83,82 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
 - A comprehensive AWS Glue ETL pipeline documented in a Jupyter Notebook or **Glue Job** code.
 - SQL queries used in **AWS Athena** to analyze the dataset.
 - A presentation summarizing the insights and findings for university stakeholders or peers.
+
+
+## [Project 2: Descriptive Analysis Using AWS Services](https://www.google.com)
+
+### Project Title: Descriptive Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
+
+![Data Exploration Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+
+#### Table of Contents ####
+
+- [Project Description](#project-description)
+- [Dataset](#dataset)
+- [Objective](#objective)
+- [Methodology](#methodology)
+- [Tools and Technologies](#tools-and-technologies)
+- [Deliverables](#deliverables)
+
+#### Project Overview:
+This project focuses on analyzing building permits issued in Vancouver's downtown region during the years 2023 and 2024. The goal is to gain insights into the types of construction projects, timelines for permit issuance, project values, and trends influencing urban development in the city. The project leverages AWS services such as S3 for data storage, Glue for ETL processes, Athena for querying, and QuickSight for data visualization.
+
+#### Key Features of the Dataset:
+- **PermitNumber**: Unique identifier for each building permit.
+- **PermitNumberCreatedDate**: Date the permit number was generated.
+- **IssueDate**: Date the permit was officially issued.
+- **PermitElapsedDays**: Time (in days) between permit creation and issuance.
+- **ProjectValue**: Monetary value of the construction project.
+- **TypeOfWork**: Type of construction work (e.g., Addition, Alteration, New Construction).
+- **Address**: Location of the construction site.
+- **ProjectDescription**: Detailed description of the construction project.
+- **PermitCategory**: Category of the building permit.
+- **Applicant**: Individual or entity applying for the permit.
+- **ApplicantAddress**: Address of the permit applicant.
+- **PropertyUse**: Intended use of the property (e.g., Dwelling, Retail).
+- **SpecificUseCategory**: Detailed property use category.
+- **BuildingContractor**: Contractor responsible for the construction project.
+- **IssueYear**: Year the permit was issued.
+- **GeoLocalArea**: Geographical area within Vancouver.
+- **YearMonth**: Year and month of permit issuance.
+- **geo_point_2d**: Geospatial coordinates for mapping.
+
+#### AWS Architecture:
+##### 1. **Data Ingestion:**
+- The dataset is ingested into **Amazon S3** in CSV format for secure and scalable storage.
+
+##### 2. **Data Cleaning and Transformation:**
+- **AWS Glue** is used to clean, transform, and categorize the data. Key transformations include:
+  - Parsing date fields for better date-related analysis.
+  - Calculating project timelines (permit elapsed days).
+  - Categorizing the types of construction work, property use, and contractor activities.
+
+##### 3. **Data Querying:**
+- **Amazon Athena** is used to query the processed data. The following insights are derived through SQL queries:
+  - Average project value categorized by property use type.
+  - Analysis of permit processing time trends over time.
+  - Identification of the most common types of construction work in Vancouver's downtown area.
+  - Geographic distribution of high-value construction projects.
+
+##### 4. **Data Visualization:**
+- **AWS QuickSight** is employed to create interactive visualizations that help uncover trends and insights:
+  - **Project Values Over Time**: A time series analysis showing fluctuations in project values across months and years.
+  - **Geographic Heatmaps**: Displaying permit concentrations and high-value projects across different downtown neighborhoods.
+  - **Permit Processing Times**: Visualizing permit approval timelines, revealing bottlenecks and efficiency trends in the process.
+
+#### Insights & Findings:
+- **Permit Trends**: Insights into the average time to issue permits, the types of work commonly requested, and the geographic areas with the most activity.
+- **High-Value Projects**: Key findings around the distribution of high-value construction projects and their locations.
+- **Construction Trends**: Understanding of the types of work that dominate downtown construction (e.g., additions, alterations).
+
+#### Tools and Technologies:
+- **Amazon S3**: For scalable data storage.
+- **AWS Glue**: For ETL processes (data cleaning, transformation, and categorization).
+- **Amazon Athena**: For querying structured datasets.
+- **AWS QuickSight**: For creating interactive dashboards and visualizations.
+
+#### Deliverables:
+- A detailed **report** summarizing insights, findings, and construction trends.
+- **Visualizations** in AWS QuickSight showcasing key project trends and metrics.
+- A **presentation** for stakeholders with visual dashboards to guide city planning and development strategy.
+
