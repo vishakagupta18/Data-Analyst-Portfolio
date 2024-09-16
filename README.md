@@ -5,7 +5,7 @@
 - [Project 2: Descriptive Analysis Using AWS Services](#Project-2-Descriptive-Analysis-Using-AWS-Services)
 - [Project 3: Diagnostic Analysis Using AWS Services](#Project-3-Diagnostic-Analysis-Using-AWS-Services)
 - [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](#Project-4-Data-Wrangling-for-University-Enrollment-Analysis-Using-AWS-Services)
-- [Project 5: City of Vancouver Building Permits Analysis](#Project-5-City-of-Vancouver-Building-Permits-Analysis)
+- [Project 5: Data Quality Control Analysis for City of Vancouver Building Permits](#Project-5-Data-Quality-Control-Analysis-for-City-of-Vancouver-Building-Permits)
 
 --- 
 
