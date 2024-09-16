@@ -163,3 +163,102 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
 - **Visualizations** in AWS QuickSight showcasing key project trends and metrics.
 - A **presentation** for stakeholders with visual dashboards to guide city planning and development strategy.
 
+## [Project 3: Diagnostic Analysis Using AWS Services](https://www.google.com)
+
+### Project Title: Diagnostic Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
+
+![Diagnostic Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+
+#### Table of Contents ####
+
+- [Project Overview](#project-overview)
+- [Objective](#objective)
+- [Dataset Key Features](#Dataset-Key-Features)
+- [AWS Architecture](#AWS-Architecture)
+- [Project Insights & Findings](#Project-Insights-&-Findings)
+- [Challenges and Solutions](#Challenges-and-Solutions)
+- [Tools and Technologies](#tools-and-technologies)
+- [Deliverables](#deliverables)
+- [Timeline](#Timeline)
+
+#### Project Overview:
+This project focuses on the diagnostic analysis of building permits issued in the downtown region of Vancouver during 2023 and 2024. The objective is to uncover insights into the types of work being performed, permit timelines, project values, and other key factors affecting construction trends in the city. The analysis is powered by AWS services like S3 for data storage, Glue for data cleaning and transformation, Athena for querying, and QuickSight for visualization.
+
+#### Objective:
+The primary goal of this project is to conduct a diagnostic analysis of building permits issued in the downtown region of Vancouver during 2023-2024. By analyzing various data points, including project values, permit processing timelines, types of construction work, and geographic distribution, we aim to uncover key trends and factors influencing construction activity. This analysis will provide actionable insights for urban planners and city officials to optimize permit processing, identify high-value projects, and support data-driven decisions for future urban development and planning in Vancouver.
+
+#### Dataset Key Features:
+- **PermitNumber:** Unique identifier for each building permit.
+- **PermitNumberCreatedDate:** Date the permit number was created.
+- **IssueDate:** Date the permit was issued.
+- **PermitElapsedDays:** Days between permit creation and issuance.
+- **ProjectValue:** Value of the project covered by the permit.
+- **TypeOfWork:** Type of construction work (e.g., Addition, Alteration).
+- **Address:** Location of the building.
+- **ProjectDescription:** Detailed description of the construction work.
+- **PermitCategory:** Category of the permit.
+- **Applicant:** Individual/entity applying for the permit.
+- **ApplicantAddress:** Address of the applicant.
+- **PropertyUse:** Intended use of the property (e.g., Dwelling, Retail, Office).
+- **SpecificUseCategory:** A more specific use category within PropertyUse.
+- **BuildingContractor:** Contractor responsible for the project.
+- **IssueYear:** Year the permit was issued.
+- **GeoLocalArea:** Geographic area within the city.
+- **YearMonth:** Year and month of permit issuance.
+- **geo_point_2d:** Geospatial coordinates for mapping.
+
+#### AWS Architecture:
+
+1. **Data Ingestion:**
+   - Building permits data is stored in Amazon S3 in CSV format.
+
+2. **Data Cleaning and Transformation:**
+   - AWS Glue is utilized to clean and transform the dataset. The transformations involve:
+     - Parsing date fields.
+     - Calculating additional metrics, such as project timelines.
+     - Categorizing data to streamline analysis.
+
+3. **Data Querying:**
+   - Amazon Athena is used to query the dataset, generating key insights:
+     - **Average project value** by property use type.
+     - **Permit processing time trends** across the years.
+     - **Most common types of work** in the downtown area.
+     - **Geographic distribution** of high-value projects.
+
+4. **Visualization:**
+   - **AWS QuickSight** is used to create interactive dashboards for visualizing:
+     - **Project values** by month and year.
+     - **Geographic heatmaps** showing concentration of permits.
+     - **Time series analysis** for permit processing times.
+
+#### Project Insights and Trends:
+- **Permit Processing Efficiency:**
+  - Identified average permit processing times based on project types, uncovering potential delays in certain work categories.
+  
+- **Geospatial Trends:**
+  - Heatmaps reveal high concentrations of large-scale projects in certain geographic areas within downtown Vancouver.
+
+- **Financial Trends:**
+  - Analysis of **ProjectValue** shows trends in construction spending, with spikes during specific months, often corresponding to infrastructure-related projects.
+
+#### Challenges and Solutions:
+- **Data Consistency Issues:** 
+  - Variability in data entry (e.g., inconsistent date formats) was resolved through comprehensive data cleaning using AWS Glue.
+
+- **Geospatial Data Visualization:**
+  - Mapping permit locations required transforming and standardizing geospatial coordinates to ensure accurate plotting in QuickSight.
+
+#### Tools and Technologies:
+- **AWS S3**: For secure storage of the building permits dataset.
+- **AWS Glue**: To perform ETL operations, including cleaning and transforming the data.
+- **Amazon Athena**: For querying the dataset and generating insights.
+- **AWS QuickSight**: To visualize trends and insights through dashboards.
+
+#### Deliverables:
+- **Comprehensive Data Analysis Report**: Summarizes findings, key metrics, and trends identified in the analysis.
+- **Interactive Dashboards**: Includes visualizations of project values, geographic trends, and permit timelines.
+- **Recommendations**: Actionable insights for the City of Vancouver on optimizing permit processing and identifying high-value construction trends.
+
+#### Timeline:
+- **Expected completion**: 6 weeks.
+- Regular check-ins and status reports will be provided to ensure alignment with stakeholders' objectives and to address any emerging challenges.
