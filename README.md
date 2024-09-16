@@ -262,3 +262,231 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 #### Timeline:
 - **Expected completion**: 6 weeks.
 - Regular check-ins and status reports will be provided to ensure alignment with stakeholders' objectives and to address any emerging challenges.
+
+
+## [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](https://www.google.com)
+
+### Project Title: Diagnostic Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
+
+![Data Wrangling Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+
+#### Table of Contents ####
+
+- [Project Overview](#project-overview)
+- [Objective](#objective)
+- [Dataset Key Features](#Dataset-Key-Features)
+- [AWS Architecture](#AWS-Architecture)
+- [Project Insights & Findings](#Project-Insights-&-Findings)
+- [Challenges and Solutions](#Challenges-and-Solutions)
+- [Tools and Technologies](#tools-and-technologies)
+- [Deliverables](#deliverables)
+- [Timeline](#Timeline)
+
+#### **Project Overview:**
+This project involves performing data wrangling on a dataset of student enrollments at the University. The goal is to clean, transform, and consolidate the student data for enhanced analysis and reporting. The analysis uses AWS services such as S3 for data storage, Glue for ETL, and Athena for querying the data. The wrangled dataset will be used to gain insights into student enrollment trends, graduation timelines, and program distribution, aiding the university in decision-making processes.
+
+#### Objective:
+The primary objective of this project is to perform comprehensive data wrangling on the university’s enrollment dataset. By cleaning and transforming the data, the goal is to improve its usability and accuracy, enabling further descriptive analysis of enrollment patterns, graduation rates, and student demographics.
+
+#### Dataset Key Features:
+- **StudentID:** Unique identifier for each student.
+- **FirstName, LastName:** Names of the students.
+- **DateOfBirth:** Birthdate of the students.
+- **Gender:** Gender of the students.
+- **Program:** The academic program in which the student is enrolled.
+- **EnrollmentDate:** Date of student enrollment.
+- **ExpectedGraduationDate:** The anticipated graduation date.
+- **Status:** Current enrollment status (Enrolled or Graduated).
+- **Email:** Contact email of the students.
+
+#### AWS Architecture:
+
+##### Data Ingestion:
+- The student enrollment data is ingested into **Amazon S3** in CSV format for storage.
+
+##### Data Cleaning and Transformation:
+- **AWS Glue** is used to clean and transform the data:
+    - Parse date fields such as `DateOfBirth`, `EnrollmentDate`, and `ExpectedGraduationDate`.
+    - Standardize gender entries (e.g., "M/F").
+    - Calculate additional metrics like the number of days from enrollment to expected graduation.
+    - Address missing data (if any) and normalize categorical variables like `Status` (e.g., "Enrolled", "Graduated").
+
+##### Data Querying:
+- **Amazon Athena** is utilized for querying the cleaned dataset. Some of the queries include:
+    - Distribution of students across different programs.
+    - Graduation timelines and trends based on the `ExpectedGraduationDate`.
+    - Breakdown of enrollment status by program and year.
+
+##### Data Visualization:
+- **AWS QuickSight** is used to visualize:
+    - Enrollment trends by year and program.
+    - Gender distribution across different academic programs.
+    - Average time to graduation per program.
+    - Dashboard visualizations for tracking student enrollment and graduation rates over time.
+
+#### Methodology:
+
+1. **Data Collection:**
+   - The student enrollment dataset is ingested into S3 in CSV format.
+
+2. **Data Assessment:**
+   - Conduct an initial assessment of the dataset to identify issues such as missing values, duplicate records, and format inconsistencies.
+   - Document data types and assess any discrepancies across key fields like `Status` and `Program`.
+
+3. **Data Cleaning:**
+   - Address any missing values or data inconsistencies.
+   - Remove duplicate records if present.
+   - Standardize categorical variables such as `Gender` and `Status`.
+   - Ensure consistency in date formats.
+
+4. **Data Transformation:**
+   - Convert string fields into appropriate data types (e.g., convert date strings to `datetime` objects).
+   - Calculate new features such as `EnrollmentDuration` (time between `EnrollmentDate` and `ExpectedGraduationDate`).
+   - Perform data aggregations, such as counting the number of students by program or calculating the average graduation time.
+
+5. **Data Consolidation:**
+   - Consolidate all relevant information into a unified dataset for further analysis.
+   - Ensure that key identifiers such as `StudentID` are consistently used for accurate linkage across records.
+
+6. **Validation:**
+   - Conduct exploratory data analysis (EDA) to validate the accuracy and completeness of the wrangled dataset.
+   - Perform checks on the cleaned dataset for consistency across fields like `Gender`, `Program`, and `Status`.
+
+#### Tools and Technologies:
+- **AWS S3**: For data storage and retrieval.
+- **AWS Glue**: For data cleaning, transformation, and ETL operations.
+- **Amazon Athena**: For querying the dataset.
+- **AWS QuickSight**: For creating interactive dashboards and visualizations.
+- **Python (Pandas, NumPy)**: For additional data wrangling and validation tasks.
+- **Jupyter Notebook**: For documenting and running Python scripts.
+
+#### Deliverables:
+- **Cleaned Dataset**: A well-structured dataset in CSV format that has been cleaned and transformed for further analysis.
+- **Data Wrangling Report**: Documentation of the data wrangling process, including methods used to clean and transform the dataset, challenges encountered, and data validation results.
+- **Visualizations**: Interactive dashboards built in AWS QuickSight that highlight key insights such as enrollment trends, gender distribution, and time-to-graduation.
+
+#### Timeline:
+- **Data Wrangling and Transformation**: 2 weeks
+- **Data Querying and Analysis**: 1 week
+- **Dashboard Creation in AWS QuickSight**: 1 week
+- **Final Report Preparation and Deliverables**: 1 week
+
+This data wrangling project ensures the preparation of a high-quality dataset that enables the university to conduct detailed analysis of enrollment patterns, helping improve student retention strategies, optimize academic offerings, and enhance overall operational efficiency.
+
+## [Project 5: City of Vancouver Building Permits Analysis](https://www.google.com)
+
+### Project Title: Data Quality Control Analysis of Vancouver Downtown Building Permits Using AWS Services
+
+![Data Quality Control Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+
+#### Table of Contents ####
+
+- [Project Overview](#project-overview)
+- [Objective](#objective)
+- [Dataset Key Features](#Dataset-Key-Features)
+- [AWS Architecture](#AWS-Architecture)
+- [Project Insights & Findings](#Project-Insights-&-Findings)
+- [Challenges and Solutions](#Challenges-and-Solutions)
+- [Tools and Technologies](#tools-and-technologies)
+- [Deliverables](#deliverables)
+- [Timeline](#Timeline)
+
+# City of Vancouver Building Permits Analysis
+
+## Project Title:
+**Vancouver Downtown Building Permits Dataset Analysis Using AWS Services**
+
+#### Overview:
+This project involves analyzing building permits issued in Vancouver's downtown region between 2023 and 2024. The dataset contains details such as project value, type of work, contractor information, permit processing time, and geographic coordinates. The aim is to derive insights to inform urban development strategies and improve permit processing efficiency.
+
+#### Objectives:
+- Perform ETL (Extract, Transform, Load) on the dataset using AWS services.
+- Visualize trends and patterns related to building permits (e.g., project types, values, timelines).
+- Analyze geographic data to understand the distribution of permit types across downtown Vancouver.
+
+#### Tools and Technologies:
+- **AWS S3**: Store raw and processed data.
+- **AWS Glue**: ETL pipeline for data extraction and transformation.
+- **AWS Athena**: Query transformed data.
+- **AWS QuickSight**: Visualize the data.
+- **Tableau/Power BI**: Additional visualization options.
+- **Python (pandas, geopandas)**: Analyze and clean the dataset.
+- **GitHub**: Store and present the project code.
+
+#### 1. Data Ingestion:
+- **City of Vancouver Open Data Catalogue.**
+- Dataset uploaded to AWS S3 in CSV format.
+
+##### Dataset Fields:
+- `PermitNumber`: Unique identifier for each permit.
+- `PermitNumberCreatedDate`: Date the permit number was created.
+- `IssueDate`: Date the permit was issued.
+- `PermitElapsedDays`: Time between creation and issuance.
+- `ProjectValue`: Value of the project in CAD.
+- `TypeOfWork`: Type of construction or alteration work.
+- `Address`: Project location.
+- `ProjectDescription`: Detailed description of the project.
+- `PermitCategory`: Classification (e.g., Residential, Commercial).
+- `Applicant`: Name of the permit applicant.
+- `ApplicantAddress`: Address of the applicant.
+- `PropertyUse`: Usage type of the property (e.g., Dwelling, Commercial).
+- `SpecificUseCategory`: Specific use type (e.g., Retail Store, Restaurant).
+- `BuildingContractor`: Name of the contractor.
+- `BuildingContractorAddress`: Contractor's address.
+- `IssueYear`: Year the permit was issued.
+- `GeoLocalArea`: Geographical area of the project within Vancouver.
+- `Geom`: Geographic coordinates of the building (lat-long).
+- `YearMonth`: Year and month of permit issuance.
+- `geo_point_2d`: Latitude and longitude in plain text.
+
+#### 2. Data Transformation (ETL):
+##### AWS Glue ETL Pipeline:
+- **Extract**: Load the dataset from AWS S3.
+- **Transform**:
+  - Clean missing or erroneous values.
+  - Convert geographic data into usable formats for spatial analysis using `geopandas`.
+  - Calculate additional fields such as `Permit Processing Time` (from `PermitElapsedDays`).
+- **Load**: Store the transformed dataset back into AWS S3 for analysis.
+
+#### 3. Data Analysis:
+Queries in AWS Athena were designed to explore different dimensions of the dataset, such as:
+- **Average Permit Processing Time** by type of work.
+- **Top 10 Most Expensive Projects**.
+- **Distribution of Permit Categories** (e.g., Commercial, Residential).
+- **Geographic Distribution** of permits across downtown Vancouver.
+
+#### 4. Data Visualization:
+
+##### 1. Permit Processing Time by Project Type:
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Bar Chart
+- **Description**: 
+  - This bar chart presents the **average time** taken to issue permits for different types of work (e.g., Residential, Commercial, Industrial).
+  - It provides a comparative view of processing times, helping identify which project types experience longer delays.
+  
+##### 2. Geographic Distribution of Permits
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Map
+- **Description**:
+  - A map was created to **visualize the geographical distribution** of building permits across downtown Vancouver.
+  - The map is **color-coded** to distinguish between various permit categories such as **residential**, **commercial**, and **other types of permits**.
+  - This visualization highlights areas with high development activity, offering a clear view of where major construction projects are concentrated within the downtown region.
+  - This tool enables stakeholders to better understand urban development trends and identify zones of higher development density.
+
+##### 3. Top 10 Projects by Value
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Pie Chart
+- **Description**:
+  - A **pie chart** was used to present the **top 10 most expensive projects** based on their project value in Canadian dollars (CAD).
+  - Each slice of the pie chart represents a high-value project, providing a comparative view of the **largest financial investments** in downtown Vancouver's construction activities.
+  - This visualization helps in identifying the **major developments** in the region and where substantial resources are being allocated, giving insights into the most significant projects shaping Vancouver’s urban landscape.
+
+##### 4. Trends in Permit Issuance
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Line Chart
+- **Description**:
+  - A **line chart** was developed to visualize the **trends in building permit issuance** over time, with data broken down by month and year.
+  - The chart highlights **fluctuations in permit issuance**, allowing for the observation of seasonal patterns or potential **impacts of city policies** on the frequency of permit applications.
+  - This visualization is key in understanding the rhythm of urban development and identifying **periods of higher or lower construction activity**, which can inform future urban planning and resource allocation.
+
+
