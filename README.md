@@ -102,13 +102,13 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
 
 #### Table of Contents ####
 
-- [Project Overview](#project-overview)
-- [Key Features of the Dataset](#Key-Features-of-the-Dataset)
-- [Objective](#objective)
-- [AWS Architecture](#AWS-Architecture)
-- [Insights & Findings](#Insights-&-Findings)
-- [Tools and Technologies](#tools-and-technologies)
-- [Deliverables](#deliverables)
+- [Project Overview](#project-overview1)
+- [Key Features of the Dataset](#Key-Features-of-the-Dataset1)
+- [Objective](#objective1)
+- [AWS Architecture](#AWS-Architecture1)
+- [Insights & Findings](#Insights-&-Findings1)
+- [Tools and Technologies](#tools-and-technologies1)
+- [Deliverables](#deliverables1)
 
 #### Project Overview:
 This project focuses on analyzing building permits issued in Vancouver's downtown region during the years 2023 and 2024. The goal is to gain insights into the types of construction projects, timelines for permit issuance, project values, and trends influencing urban development in the city. The project leverages AWS services such as S3 for data storage, Glue for ETL processes, Athena for querying, and QuickSight for data visualization.
