@@ -391,12 +391,7 @@ This data wrangling project ensures the preparation of a high-quality dataset th
 - [Deliverables](#deliverables)
 - [Timeline](#Timeline)
 
-# City of Vancouver Building Permits Analysis
-
-## Project Title:
-**Vancouver Downtown Building Permits Dataset Analysis Using AWS Services**
-
-#### Overview:
+#### Project Overview:
 This project involves analyzing building permits issued in Vancouver's downtown region between 2023 and 2024. The dataset contains details such as project value, type of work, contractor information, permit processing time, and geographic coordinates. The aim is to derive insights to inform urban development strategies and improve permit processing efficiency.
 
 #### Objectives:
