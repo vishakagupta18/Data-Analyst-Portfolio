@@ -1,11 +1,11 @@
 # Projects
 
 #### Table of Contents ####
-- [Project 1: Exploratory Data Analysis Using AWS Services](#Project 1: Exploratory Data Analysis Using AWS Services)
-- [Project 2: Descriptive Analysis Using AWS Services](#Project 2: Descriptive Analysis Using AWS Services)
-- [Project 3: Diagnostic Analysis Using AWS Services](#Project 3: Diagnostic Analysis Using AWS Services)
-- [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](#Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services)
-- [Project 5: City of Vancouver Building Permits Analysis](#Project 5: City of Vancouver Building Permits Analysis)
+- [Project 1: Exploratory Data Analysis Using AWS Services](#Project-1-Exploratory-Data-Analysis-Using-AWS-Services)
+- [Project 2: Descriptive Analysis Using AWS Services](#Project-2-Descriptive-Analysis-Using-AWS-Services)
+- [Project 3: Diagnostic Analysis Using AWS Services](#Project-3-Diagnostic-Analysis-Using-AWS-Services)
+- [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](#Project-4-Data-Wrangling-for-University-Enrollment-Analysis-Using-AWS-Services)
+- [Project 5: City of Vancouver Building Permits Analysis](#Project-5-City-of-Vancouver-Building-Permits-Analysis)
 
 ## [Project 1: Exploratory Data Analysis Using AWS Services](https://www.google.com)
 
