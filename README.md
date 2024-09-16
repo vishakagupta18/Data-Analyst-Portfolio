@@ -98,7 +98,7 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
 
 ### Project Title: Descriptive Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Data Exploration Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+![Descriptive Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DescriptiveAnalysis.png)
 
 #### Table of Contents ####
 
