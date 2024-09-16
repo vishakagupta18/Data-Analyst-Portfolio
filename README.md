@@ -382,7 +382,7 @@ The primary objective of this project is to perform comprehensive data wrangling
 
 This data wrangling project ensures the preparation of a high-quality dataset that enables the university to conduct detailed analysis of enrollment patterns, helping improve student retention strategies, optimize academic offerings, and enhance overall operational efficiency.
 
-## [Project 5: City of Vancouver Building Permits Analysis](https://www.google.com)
+## [Project 5: Data Quality Control Analysis for City of Vancouver Building Permits](https://www.google.com)
 
 ### Project Title: Data Quality Control Analysis of Vancouver Downtown Building Permits Using AWS Services
 
