@@ -271,6 +271,7 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 - **AWS Glue**: To perform ETL operations, including cleaning and transforming the data.
 - **Amazon Athena**: For querying the dataset and generating insights.
 - **AWS QuickSight**: To visualize trends and insights through dashboards.
+- **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
 
 #### Deliverables:
 - **Comprehensive Data Analysis Report**: Summarizes findings, key metrics, and trends identified in the analysis.
@@ -358,6 +359,12 @@ The primary objective of this project is to perform comprehensive data wrangling
 - **AWS Glue**: For data cleaning, transformation, and ETL operations.
 - **Amazon Athena**: For querying the dataset.
 - **AWS QuickSight**: For creating interactive dashboards and visualizations.
+- **AWS EC2**: For scalable and customizable compute resources to process the dataset.
+- **AWS VPC**: To create a secure and isolated environment to run the EC2 instances.
+- **AWS S3**: For storing raw, cleaned, and curated datasets.
+- **IAM Roles**: To manage access control between services.
+- **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
+- **AWS KMS**: To encrypt sensitive data.
 
 #### Deliverables:
 - **Cleaned Dataset**: A well-structured dataset in CSV format that has been cleaned and transformed for further analysis.
