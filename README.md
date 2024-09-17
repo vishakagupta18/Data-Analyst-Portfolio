@@ -17,7 +17,7 @@ Overview of my projects
 
 ![Data Exploration Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/main/DataExploration.jpg)
 abc
-<img src="https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/d464a27f70b6f16f85073b1ca7e56da7a37cc1ef/images/DescriptiveAnalysis.png" />
+<img src="/images/DiagnosticAnalysis.png" />
 
 #### Project Description: ####
 This project aims to perform an exploratory data analysis (EDA) of the University's Enrollment and Withdrawal dataset using AWS services to uncover insights related to student enrollment patterns, program distribution, and retention rates. By leveraging AWS tools such as S3, AWS Glue, and Athena, we explore trends based on features like gender, academic programs, and enrollment status. This project demonstrates how cloud-based services streamline large-scale data analysis and visualization.
