@@ -15,9 +15,7 @@ Overview of my projects
 
 ### Project Title: Enrollment and Withdrawal Trends Analysis at University Canada West Using AWS
 
-![Data Exploration Steps](./images/DiagnosticAnalysis.png)
-abc
-<img src="./images/DiagnosticAnalysis.png" />
+![Data Exploration Steps](./images/DataExplorationUCW.png)
 
 #### Project Description: ####
 This project aims to perform an exploratory data analysis (EDA) of the University's Enrollment and Withdrawal dataset using AWS services to uncover insights related to student enrollment patterns, program distribution, and retention rates. By leveraging AWS tools such as S3, AWS Glue, and Athena, we explore trends based on features like gender, academic programs, and enrollment status. This project demonstrates how cloud-based services streamline large-scale data analysis and visualization.
@@ -89,7 +87,7 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
 
 ### Project Title: Descriptive Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Descriptive Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/d464a27f70b6f16f85073b1ca7e56da7a37cc1ef/images/DescriptiveAnalysis.png)
+![Descriptive Analysis Steps](./images/DescriptiveAnalysis.png)
 
 #### Project Overview:
 This project focuses on analyzing building permits issued in Vancouver's downtown region during the years 2023 and 2024. The goal is to gain insights into the types of construction projects, timelines for permit issuance, project values, and trends influencing urban development in the city. The project leverages AWS services such as S3 for data storage, Glue for ETL processes, Athena for querying, and QuickSight for data visualization.
@@ -124,7 +122,7 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
   - Calculating project timelines (permit elapsed days).
   - Categorizing the types of construction work, property use, and contractor activities.
 
-![Data Lineage Diagram](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/e407c054a7e06fbaa72c1bc7d6fce3c9cec05f66/images/DescriptiveDLD.jpg)
+![Data Lineage Diagram](./images/DescriptiveDLD.jpg)
 
 ##### 3. **Data Querying:**
 - **Amazon Athena** is used to query the processed data. The following insights are derived through SQL queries:
@@ -161,7 +159,7 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
 
 ### Project Title: Diagnostic Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Diagnostic Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/d464a27f70b6f16f85073b1ca7e56da7a37cc1ef/images/DiagnosticAnalysis.png)
+![Diagnostic Analysis Steps](./images/DiagnosticAnalysis.png)
 
 #### Project Overview:
 This project focuses on the diagnostic analysis of building permits issued in the downtown region of Vancouver during 2023 and 2024. The objective is to uncover insights into the types of work being performed, permit timelines, project values, and other key factors affecting construction trends in the city. The analysis is powered by AWS services like S3 for data storage, Glue for data cleaning and transformation, Athena for querying, and QuickSight for visualization.
@@ -294,7 +292,7 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 
 ### Project Title: Data Wrangling of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Data Wrangling Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/452756704ad30dc1af6e594028bc4148b941ca22/images/DataWrangling.png)
+![Data Wrangling Steps](./images/DataWrangling.png)
 
 #### **Project Overview:**
 This project involves performing data wrangling on a dataset of student enrollments at the University. The goal is to clean, transform, and consolidate the student data for enhanced analysis and reporting. The analysis uses AWS services such as S3 for data storage, Glue for ETL, and Athena for querying the data. The wrangled dataset will be used to gain insights into student enrollment trends, graduation timelines, and program distribution, aiding the university in decision-making processes.
@@ -341,11 +339,11 @@ The primary objective of this project is to perform comprehensive data wrangling
 #### Methodology:
 
 1. **Discover**
-   - **Understanding the Data**: Conducted an initial assessment to comprehend the structure, data types, and content of the dataset. Key features include          StudentID, Name, DateOfBirth, Gender, Program, EnrollmentDate, GraduationDate, and Status.
+   - **Understanding the Data**: Conducted an initial assessment to comprehend the structure, data types, and content of the dataset. Key features include StudentID, Name, DateOfBirth, Gender, Program, EnrollmentDate, GraduationDate, and Status.
    - **Exploratory Data Analysis (EDA)**: Identified missing values, anomalies, and outliers to understand data quality and distribution.
 2. **Structure**
-   - **Organize Data**: Defined schemas and data types for each field in the dataset, ensuring that dates, numerical fields, and categorical variables were          properly formatted.
-   - **Format Data**: Standardized formats for dates and categorical variables, particularly focusing on consistency in fields such as EnrollmentDate,             GraduationDate, and Program.
+   - **Organize Data**: Defined schemas and data types for each field in the dataset, ensuring that dates, numerical fields, and categorical variables were properly formatted.
+   - **Format Data**: Standardized formats for dates and categorical variables, particularly focusing on consistency in fields such as EnrollmentDate, GraduationDate, and Program.
 3. **Clean**
    - **Handle Missing Values**: Used imputation techniques for non-essential fields or removed records with missing essential fields.
    - **Remove Duplicates**: Eliminated duplicate entries based on StudentID.
@@ -392,7 +390,7 @@ This data wrangling project ensures the preparation of a high-quality dataset th
 
 ### Project Title: Data Quality Control Analysis of Vancouver Downtown Building Permits Using AWS Services
 
-![Data Quality Control Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/452756704ad30dc1af6e594028bc4148b941ca22/images/DataQuality.png)
+![Data Quality Control Steps](./images/DataQuality.png)
 
 #### Project Overview:
 This project involves analyzing building permits issued in Vancouver's downtown region from 2023 to 2024. The dataset includes information such as project value, type of work, contractor information, permit processing time, and geographic coordinates. The goal is to gain insights to support urban development strategies and improve permit processing efficiency.
@@ -401,17 +399,6 @@ This project involves analyzing building permits issued in Vancouver's downtown 
 - Perform ETL (Extract, Transform, Load) on the dataset using AWS services.
 - Visualize trends and patterns related to building permits (e.g., project types, values, timelines).
 - Analyze geographic data to understand the distribution of permit types across downtown Vancouver.
-
-#### Tools and Technologies:
-- **AWS S3**: Store raw and processed data.
-- **AWS Glue**: ETL pipeline for data extraction and transformation.
-- **AWS Athena**: Query transformed data.
-- **AWS QuickSight**: Visualize the data.
-- **AWS EC2**: For scalable and customizable compute resources to process the dataset.
-- **AWS VPC**: To create a secure and isolated environment to run the EC2 instances.
-- **IAM Roles**: To manage access control between services.
-- **AWS KMS**: To encrypt sensitive data.
-- **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
 
 #### 1. Data Ingestion:
 - **City of Vancouver Open Data Catalogue.**
@@ -507,4 +494,23 @@ Queries in AWS Athena were designed to explore different dimensions of the datas
      - The chart highlights **fluctuations in permit issuance**, allowing for the observation of seasonal patterns or potential **impacts of city policies** on the frequency of permit applications.
      - This visualization is key in understanding the rhythm of urban development and identifying **periods of higher or lower construction activity**, which can inform future urban planning and resource allocation.
 
+#### Tools and Technologies:
+- **AWS S3**: Store raw and processed data.
+- **AWS Glue**: ETL pipeline for data extraction and transformation.
+- **AWS Athena**: Query transformed data.
+- **AWS QuickSight**: Visualize the data.
+- **AWS EC2**: For scalable and customizable compute resources to process the dataset.
+- **AWS VPC**: To create a secure and isolated environment to run the EC2 instances.
+- **IAM Roles**: To manage access control between services.
+- **AWS KMS**: To encrypt sensitive data.
+- **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
 
+#### Deliverables:
+- Data Quality Control Plan: A comprehensive plan outlining processes, metrics, and responsibilities.
+- Documentation: Detailed documentation of data quality metrics and Key Performance Indicators (KPIs).
+- Cleaned and Validated Datasets: Datasets that are ready for further analysis and reporting.
+- Training Resources: Materials, guides, and workshops to train staff on data quality control practices.
+- Monitoring Dashboard: A real-time dashboard visualizing data quality metrics to ensure continuous monitoring.
+
+#### Timeline
+- Expected Completion: 8 weeks, covering assessment, implementation, training, and monitoring setup.
