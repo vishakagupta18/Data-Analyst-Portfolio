@@ -70,11 +70,6 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
      - **Gender-based Patterns**: Gender distribution may show differences in enrollment trends.
      - **Enrollment Growth**: Year-over-year enrollment analysis may highlight academic cycles and potential areas for university outreach.
 
-6. **Conclusion**:
-   - Discuss actionable insights, such as identifying programs with low retention and suggesting strategies for improvement.
-   - Highlight how AWS services streamlined the data pipeline, from storage to analysis and visualization.
-   - Future analysis could include predictive modeling using **AWS SageMaker** to predict student retention based on historical trends.
-
 #### Tools and Technologies:
 - **AWS S3** for data storage.
 - **AWS Glue** for data cleaning, transformation, and cataloging.
