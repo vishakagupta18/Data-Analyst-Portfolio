@@ -242,10 +242,10 @@ The primary goal of this project is to conduct a diagnostic analysis of building
    - Set up billing alerts to stay within the project budget.
 
 #### AWS CloudTrail:
--**Audit Logging:**
+- **Audit Logging:**
    - Record all API calls and user activities across AWS services.
    - Maintain logs of who accessed or modified data, which is essential for compliance and security audits.
--**Security Analysis:**
+- **Security Analysis:**
    - Use CloudTrail logs to detect unauthorized access attempts or suspicious activities.
    - Integrate with AWS Security Hub for advanced threat detection.
 
@@ -280,7 +280,6 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 #### Timeline:
 - **Expected completion**: 6 weeks.
 - Regular check-ins and status reports will be provided to ensure alignment with stakeholders' objectives and to address any emerging challenges.
-
 
 ## [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](https://www.google.com)
 
