@@ -405,6 +405,8 @@ This project involves analyzing building permits issued in Vancouver's downtown 
 - **AWS Glue**: ETL pipeline for data extraction and transformation.
 - **AWS Athena**: Query transformed data.
 - **AWS QuickSight**: Visualize the data.
+- **AWS EC2**: For scalable and customizable compute resources to process the dataset.
+- **AWS VPC**: To create a secure and isolated environment to run the EC2 instances.
 - **IAM Roles**: To manage access control between services.
 - **AWS KMS**: To encrypt sensitive data.
 - **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
