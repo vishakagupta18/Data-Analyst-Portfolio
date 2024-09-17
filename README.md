@@ -1,5 +1,7 @@
 # Projects
 
+Overview of my projects
+
 ### Table of Contents ###
 - [Project 1: Exploratory Data Analysis Using AWS Services](#Project-1-Exploratory-Data-Analysis-Using-AWS-Services)
 - [Project 2: Descriptive Analysis Using AWS Services](#Project-2-Descriptive-Analysis-Using-AWS-Services)
