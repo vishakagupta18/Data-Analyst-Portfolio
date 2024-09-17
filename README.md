@@ -144,7 +144,7 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
 
 #### Tools and Technologies:
 - **Amazon S3**: For scalable data storage.
-- **AWS Glue**: For ETL processes (data cleaning, transformation, and categorization).
+- **AWS Glue**: For ETL processes (data cleaning, transformation, and categorization) and Used **DataBrew** to clean and normalize data.
 - **Amazon Athena**: For querying structured datasets.
 - **AWS QuickSight**: For creating interactive dashboards and visualizations.
 
@@ -271,6 +271,8 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 - **AWS Glue**: To perform ETL operations, including cleaning and transforming the data.
 - **Amazon Athena**: For querying the dataset and generating insights.
 - **AWS QuickSight**: To visualize trends and insights through dashboards.
+- **IAM Roles**: To manage access control between services.
+- **AWS KMS**: To encrypt sensitive data.
 - **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
 
 #### Deliverables:
@@ -361,10 +363,6 @@ The primary objective of this project is to perform comprehensive data wrangling
 - **AWS QuickSight**: For creating interactive dashboards and visualizations.
 - **AWS EC2**: For scalable and customizable compute resources to process the dataset.
 - **AWS VPC**: To create a secure and isolated environment to run the EC2 instances.
-- **AWS S3**: For storing raw, cleaned, and curated datasets.
-- **IAM Roles**: To manage access control between services.
-- **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
-- **AWS KMS**: To encrypt sensitive data.
 
 #### Deliverables:
 - **Cleaned Dataset**: A well-structured dataset in CSV format that has been cleaned and transformed for further analysis.
@@ -401,9 +399,9 @@ This project involves analyzing building permits issued in Vancouver's downtown 
 - **AWS Glue**: ETL pipeline for data extraction and transformation.
 - **AWS Athena**: Query transformed data.
 - **AWS QuickSight**: Visualize the data.
-- **Tableau/Power BI**: Additional visualization options.
-- **Python (pandas, geopandas)**: Analyze and clean the dataset.
-- **GitHub**: Store and present the project code.
+- **IAM Roles**: To manage access control between services.
+- **AWS KMS**: To encrypt sensitive data.
+- **CloudTrail & CloudWatch**: For monitoring and auditing the environment.
 
 #### 1. Data Ingestion:
 - **City of Vancouver Open Data Catalogue.**
