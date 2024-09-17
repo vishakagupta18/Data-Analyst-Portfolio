@@ -157,7 +157,7 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
 
 ### Project Title: Diagnostic Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Diagnostic Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+![Diagnostic Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/452756704ad30dc1af6e594028bc4148b941ca22/images/DiagnosticAnalysis.png)
 
 #### Project Overview:
 This project focuses on the diagnostic analysis of building permits issued in the downtown region of Vancouver during 2023 and 2024. The objective is to uncover insights into the types of work being performed, permit timelines, project values, and other key factors affecting construction trends in the city. The analysis is powered by AWS services like S3 for data storage, Glue for data cleaning and transformation, Athena for querying, and QuickSight for visualization.
@@ -286,7 +286,7 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 
 ### Project Title: Data Wrangling of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Data Wrangling Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+![Data Wrangling Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/452756704ad30dc1af6e594028bc4148b941ca22/images/DataWrangling.png)
 
 #### **Project Overview:**
 This project involves performing data wrangling on a dataset of student enrollments at the University. The goal is to clean, transform, and consolidate the student data for enhanced analysis and reporting. The analysis uses AWS services such as S3 for data storage, Glue for ETL, and Athena for querying the data. The wrangled dataset will be used to gain insights into student enrollment trends, graduation timelines, and program distribution, aiding the university in decision-making processes.
@@ -380,7 +380,7 @@ This data wrangling project ensures the preparation of a high-quality dataset th
 
 ### Project Title: Data Quality Control Analysis of Vancouver Downtown Building Permits Using AWS Services
 
-![Data Quality Control Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+![Data Quality Control Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/452756704ad30dc1af6e594028bc4148b941ca22/images/DataQuality.png)
 
 #### Project Overview:
 This project involves analyzing building permits issued in Vancouver's downtown region from 2023 to 2024. The dataset includes information such as project value, type of work, contractor information, permit processing time, and geographic coordinates. The goal is to gain insights to support urban development strategies and improve permit processing efficiency.
