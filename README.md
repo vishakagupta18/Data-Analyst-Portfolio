@@ -244,7 +244,7 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 
 ## [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](https://www.google.com)
 
-### Project Title: Diagnostic Wrangling of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
+### Project Title: Data Wrangling of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
 ![Data Wrangling Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
 
