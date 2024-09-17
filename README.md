@@ -494,3 +494,135 @@ Queries in AWS Athena were designed to explore different dimensions of the datas
   - This visualization is key in understanding the rhythm of urban development and identifying **periods of higher or lower construction activity**, which can inform future urban planning and resource allocation.
 
 
+
+## [Project 5: Data Quality Control Analysis for City of Vancouver Building Permits](https://www.google.com)
+
+### Project Title: Data Quality Control Analysis of Vancouver Downtown Building Permits Using AWS Services
+
+![Data Quality Control Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
+
+#### Table of Contents ####
+
+- [Project Overview](#project-overview)
+- [Objective](#objective)
+- [Dataset Key Features](#Dataset-Key-Features)
+- [AWS Architecture](#AWS-Architecture)
+- [Project Insights & Findings](#Project-Insights-&-Findings)
+- [Challenges and Solutions](#Challenges-and-Solutions)
+- [Tools and Technologies](#tools-and-technologies)
+- [Deliverables](#deliverables)
+- [Timeline](#Timeline)
+
+#### Project Overview:
+This project involves analyzing building permits issued in Vancouver's downtown region from 2023 to 2024. The dataset includes information such as project value, type of work, contractor information, permit processing time, and geographic coordinates. The goal is to gain insights to support urban development strategies and improve permit processing efficiency.
+
+#### Objectives:
+- Perform ETL (Extract, Transform, Load) on the dataset using AWS services.
+- Visualize trends and patterns related to building permits (e.g., project types, values, timelines).
+- Analyze geographic data to understand the distribution of permit types across downtown Vancouver.
+
+#### Tools and Technologies:
+- **AWS S3**: Store raw and processed data.
+- **AWS Glue**: ETL pipeline for data extraction and transformation.
+- **AWS Athena**: Query transformed data.
+- **AWS QuickSight**: Visualize the data.
+- **Tableau/Power BI**: Additional visualization options.
+- **Python (pandas, geopandas)**: Analyze and clean the dataset.
+- **GitHub**: Store and present the project code.
+
+#### 1. Data Ingestion:
+- **City of Vancouver Open Data Catalogue.**
+- Dataset uploaded to AWS S3 in CSV format.
+
+##### Dataset Fields:
+- `PermitNumber`: Unique identifier for each permit.
+- `PermitNumberCreatedDate`: Date the permit number was created.
+- `IssueDate`: Date the permit was issued.
+- `PermitElapsedDays`: Time between creation and issuance.
+- `ProjectValue`: Value of the project in CAD.
+- `TypeOfWork`: Type of construction or alteration work.
+- `Address`: Project location.
+- `ProjectDescription`: Detailed description of the project.
+- `PermitCategory`: Classification (e.g., Residential, Commercial).
+- `Applicant`: Name of the permit applicant.
+- `ApplicantAddress`: Address of the applicant.
+- `PropertyUse`: Usage type of the property (e.g., Dwelling, Commercial).
+- `SpecificUseCategory`: Specific use type (e.g., Retail Store, Restaurant).
+- `BuildingContractor`: Name of the contractor.
+- `BuildingContractorAddress`: Contractor's address.
+- `IssueYear`: Year the permit was issued.
+- `GeoLocalArea`: Geographical area of the project within Vancouver.
+- `Geom`: Geographic coordinates of the building (lat-long).
+- `YearMonth`: Year and month of permit issuance.
+- `geo_point_2d`: Latitude and longitude in plain text.
+
+#### 2. Data Transformation (ETL):
+##### AWS Glue ETL Pipeline:
+- **Extract**: Load the dataset from AWS S3.
+- **Transform**:
+  - Clean missing or erroneous values.
+  - **Sensitive Data Handling**: In the ETL pipeline created using AWS Glue, part of the transformation process will focus on data governance principles by detecting and eliminating sensitive data related 
+    to Canada's Personal Identifiable Information (PII). This ensures compliance with data privacy regulations such as PIPEDA (Personal Information Protection and Electronic Documents Act).
+  - Convert geographic data into usable formats for spatial analysis using `geopandas`.
+  - Calculate additional fields such as `Permit Processing Time` (from `PermitElapsedDays`).
+  - **Data Quality Control**: The ETL process also incorporates checks to ensure the data quality meets the following standards:
+      - **Completeness**: Ensuring more than 95% of the data is available (e.g., no null or missing fields for key attributes such as PermitNumber, ProjectValue).
+      - **Uniqueness**: Checking for duplicates to maintain more than 80% uniqueness (e.g., ensuring there are no duplicate PermitNumbers).
+      - **Freshness**: Verifying that the data is recent, particularly for ongoing projects (e.g., ensuring PermitElapsedDays is up to date).
+      - **Valid Value Checks**: Ensuring data consistency (e.g., PermitCategory should only contain predefined categories like "Residential" or "Commercial").
+- **Load**: Store the transformed dataset back into AWS S3 for analysis.
+- **Scheduled ETL**: The ETL job is scheduled to run weekly on Sundays at 11:59 PM, ensuring that the dataset is regularly updated and refreshed in AWS S3. The job is part of an automated workflow 
+    triggered on a weekly basis, keeping the data analysis up-to-date.
+
+#### 3. Data Analysis:
+Queries in AWS Athena were designed to explore different dimensions of the dataset, such as:
+- **Average Permit Processing Time** by type of work.
+- **Top 10 Most Expensive Projects**.
+- **Distribution of Permit Categories** (e.g., Commercial, Residential).
+- **Geographic Distribution** of permits across downtown Vancouver.
+
+#### 4. Data Monitoring & Controlling:
+##### 1. AWS CloudWatch:
+
+- Activity Tracking: CloudWatch is used to monitor the ETL job's execution and track the activities related to the project, such as job success/failure, run times, and user interactions.
+- Cost Monitoring: An alarm is set to trigger if the overall budget for the project exceeds $45. This ensures cost efficiency and prevents unexpected billing surprises when using AWS services like Glue, Athena, and QuickSight.
+- Dashboard Creation: A dashboard is created to visualize various project activities, such as job success rates, data ingestion trends, and costs over time. This allows for real-time monitoring and control.
+
+##### 2. AWS CloudTrail:
+- CloudTrail logs are used to track user activities, providing an audit trail of who accessed or modified the dataset. This is crucial for governance and accountability, especially in a multi-user project   environment.
+
+#### 5. Data Visualization:
+
+##### 1. Permit Processing Time by Project Type:
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Bar Chart
+- **Description**: 
+  - This bar chart presents the **average time** taken to issue permits for different types of work (e.g., Residential, Commercial, Industrial).
+  - It provides a comparative view of processing times, helping identify which project types experience longer delays.
+  
+##### 2. Geographic Distribution of Permits
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Map
+- **Description**:
+  - A map was created to **visualize the geographical distribution** of building permits across downtown Vancouver.
+  - The map is **color-coded** to distinguish between various permit categories such as **residential**, **commercial**, and **other types of permits**.
+  - This visualization highlights areas with high development activity, offering a clear view of where major construction projects are concentrated within the downtown region.
+  - This tool enables stakeholders to better understand urban development trends and identify zones of higher development density.
+
+##### 3. Top 10 Projects by Value
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Pie Chart
+- **Description**:
+  - A **pie chart** was used to present the **top 10 most expensive projects** based on their project value in Canadian dollars (CAD).
+  - Each slice of the pie chart represents a high-value project, providing a comparative view of the **largest financial investments** in downtown Vancouver's construction activities.
+  - This visualization helps in identifying the **major developments** in the region and where substantial resources are being allocated, giving insights into the most significant projects shaping Vancouver’s urban landscape.
+
+##### 4. Trends in Permit Issuance
+- **Visualization Tool**: AWS QuickSight / Tableau
+- **Type of Visualization**: Line Chart
+- **Description**:
+  - A **line chart** was developed to visualize the **trends in building permit issuance** over time, with data broken down by month and year.
+  - The chart highlights **fluctuations in permit issuance**, allowing for the observation of seasonal patterns or potential **impacts of city policies** on the frequency of permit applications.
+  - This visualization is key in understanding the rhythm of urban development and identifying **periods of higher or lower construction activity**, which can inform future urban planning and resource allocation.
+
+
