@@ -197,7 +197,7 @@ The primary goal of this project is to conduct a diagnostic analysis of building
    - **Sales Trends Analysis**:
        - Data Querying with Amazon Athena:
            - Secure Query Execution:
-              - Use IAM policies to control who can run queries on Athena.
+              - Use **IAM** policies to control who can run queries on Athena.
               - Ensure that query results are stored in encrypted S3 buckets.
 
         - Analysis Tasks
