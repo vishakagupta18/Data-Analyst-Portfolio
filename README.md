@@ -3,11 +3,11 @@
 Overview of my projects
 
 ### Table of Contents ###
-- [Project 1: Exploratory Data Analysis Using AWS Services](#Project-1-Exploratory-Data-Analysis-Using-AWS-Services)
-- [Project 2: Descriptive Analysis Using AWS Services](#Project-2-Descriptive-Analysis-Using-AWS-Services)
-- [Project 3: Diagnostic Analysis Using AWS Services](#Project-3-Diagnostic-Analysis-Using-AWS-Services)
-- [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](#Project-4-Data-Wrangling-for-University-Enrollment-Analysis-Using-AWS-Services)
-- [Project 5: Data Quality Control Analysis for City of Vancouver Building Permits](#Project-5-Data-Quality-Control-Analysis-for-City-of-Vancouver-Building-Permits)
+- [Project 1: Exploratory Data Analysis Using AWS Services](#project-1-exploratory-data-analysis-using-aws-services)
+- [Project 2: Descriptive Analysis Using AWS Services](#project-2-descriptive-analysis-using-aws-services)
+- [Project 3: Diagnostic Analysis Using AWS Services](#project-3-diagnostic-analysis-using-aws-services)
+- [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](#project-4-data-wrangling-for-university-enrollment-analysis-using-aws-services)
+- [Project 5: Data Quality Control Analysis for City of Vancouver Building Permits](#project-5-data-quality-control-analysis-for-city-of-vancouver-building-permits)
 
 --- 
 
