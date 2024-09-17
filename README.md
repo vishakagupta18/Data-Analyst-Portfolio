@@ -293,26 +293,26 @@ The primary objective of this project is to perform comprehensive data wrangling
 #### Methodology:
 
 1. **Discover**
-- **Understanding the Data**: Conducted an initial assessment to comprehend the structure, data types, and content of the dataset. Key features include          StudentID, Name, DateOfBirth, Gender, Program, EnrollmentDate, GraduationDate, and Status.
-- **Exploratory Data Analysis (EDA)**: Identified missing values, anomalies, and outliers to understand data quality and distribution.
+   - **Understanding the Data**: Conducted an initial assessment to comprehend the structure, data types, and content of the dataset. Key features include          StudentID, Name, DateOfBirth, Gender, Program, EnrollmentDate, GraduationDate, and Status.
+   - **Exploratory Data Analysis (EDA)**: Identified missing values, anomalies, and outliers to understand data quality and distribution.
 2. **Structure**
-- **Organize Data**: Defined schemas and data types for each field in the dataset, ensuring that dates, numerical fields, and categorical variables were          properly formatted.
-- **Format Data**: Standardized formats for dates and categorical variables, particularly focusing on consistency in fields such as EnrollmentDate,             GraduationDate, and Program.
+   - **Organize Data**: Defined schemas and data types for each field in the dataset, ensuring that dates, numerical fields, and categorical variables were          properly formatted.
+   - **Format Data**: Standardized formats for dates and categorical variables, particularly focusing on consistency in fields such as EnrollmentDate,             GraduationDate, and Program.
 3. **Clean**
-- **Handle Missing Values**: Used imputation techniques for non-essential fields or removed records with missing essential fields.
-- **Remove Duplicates**: Eliminated duplicate entries based on StudentID.
-- **Correct Errors**: Corrected inconsistencies in data entries, including typos in Program names and inaccurate Status fields.
+   - **Handle Missing Values**: Used imputation techniques for non-essential fields or removed records with missing essential fields.
+   - **Remove Duplicates**: Eliminated duplicate entries based on StudentID.
+   - **Correct Errors**: Corrected inconsistencies in data entries, including typos in Program names and inaccurate Status fields.
 4. **Enrich**
-- **Feature Engineering**:
-   - Calculated EnrollmentDuration by finding the difference between EnrollmentDate and GraduationDate.
-   - Derived Age from DateOfBirth.
-   - Standardized categorical variables by normalizing entries in Gender, Status, and Program.
+   - **Feature Engineering**:
+      - Calculated EnrollmentDuration by finding the difference between EnrollmentDate and GraduationDate.
+      - Derived Age from DateOfBirth.
+      - Standardized categorical variables by normalizing entries in Gender, Status, and Program.
 5. **Validate**
-- **Data Consistency Checks**: Ensured logical consistency, such as validating that EnrollmentDate precedes GraduationDate.
-- **Quality Assurance**: Conducted quality checks to verify that the data transformations preserved integrity and accuracy.
+   - **Data Consistency Checks**: Ensured logical consistency, such as validating that EnrollmentDate precedes GraduationDate.
+   - **Quality Assurance**: Conducted quality checks to verify that the data transformations preserved integrity and accuracy.
 6. **Publish**
-- **Curated Dataset**: Saved the cleaned and enriched dataset back to AWS S3 in a designated curated zone for further analysis.
-- **Documentation**: Recorded all data wrangling steps, decisions, and insights in a structured format for transparency and reproducibility.
+   - **Curated Dataset**: Saved the cleaned and enriched dataset back to AWS S3 in a designated curated zone for further analysis.
+   - **Documentation**: Recorded all data wrangling steps, decisions, and insights in a structured format for transparency and reproducibility.
 
 #### Tools and Technologies:
 - **AWS S3**: For data storage and retrieval.
