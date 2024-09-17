@@ -195,31 +195,59 @@ The primary goal of this project is to conduct a diagnostic analysis of building
       - Data is normalized to ensure consistent formats for fields like property types, work categories, and permit categories, making it suitable for                analysis.
 2. **Trend Analysis**:
    - **Sales Trends Analysis**:
-      Query the data using Amazon Athena to analyze trends over time (month/year) for key metrics like:
-      - Average Project Value by property type (Dwelling, Retail, Office).
-      - Permit Processing Time trends based on categories like Type of Work (Addition, Alteration).
-      - Geographic Trends by mapping permit concentration across downtown regions using geo_point_2d coordinates.
-      - AWS QuickSight will visualize these trends using time series graphs and geographic heatmaps.
+       - Data Querying with Amazon Athena:
+           - Secure Query Execution:
+              - Use IAM policies to control who can run queries on Athena.
+              - Ensure that query results are stored in encrypted S3 buckets.
+
+        - Analysis Tasks
+             - Query the data using Amazon Athena to analyze trends over time (month/year) for key metrics like:
+               - Average Project Value by property type (Dwelling, Retail, Office).
+               - Permit Processing Time trends based on categories like Type of Work (Addition, Alteration).
+               - Geographic Trends by mapping permit concentration across downtown regions using geo_point_2d coordinates.
+               - AWS QuickSight will visualize these trends using time series graphs and geographic heatmaps.
+                 
 3. **Correlation Analysis:**
    - **Sales Decline and Variables:**
      Analyze relationships between permit processing delays and variables such as:
       - ProjectValue to determine if higher value projects take longer to process.
       - Geographic area (GeoLocalArea) and the specific TypeOfWork to identify any regions or work types associated with delays.
       - Use statistical methods like regression analysis to quantify the strength of these relationships.
+        
 4. **Root Cause Analysis:**
    - **Investigating Permit Processing Delays:**
       - Conduct discussions or interviews (if possible) with city officials and contractors to gain qualitative insights into potential causes of delays.
       - Use structured techniques like the "5 Whys" or Fishbone Diagram to systematically explore potential root causes for processing delays and identify          areas for improvement in efficiency.
+        
 5. **Segmentation Analysis:**
    - **Customer Segmentation by Project Type:**
      Segment the data by project characteristics, such as:
-   - Property use type (Dwelling, Retail, Office).
-   - Work type (Addition, Alteration).
-   - This segmentation will allow for a deeper understanding of how different types of projects are impacted by processing times or geographic location.
+      - Property use type (Dwelling, Retail, Office).
+      - Work type (Addition, Alteration).
+      - This segmentation will allow for a deeper understanding of how different types of projects are impacted by processing times or geographic location.
+     
 6. **Synthesis of Findings:**
    - **Quantitative and Qualitative Integration:**
       - Integrate findings from both quantitative (trend and correlation analysis) and qualitative (root cause) research to form a cohesive narrative on the       - key drivers of permit processing times and construction trends.
       - Highlight patterns and themes in the data that provide actionable insights for urban planners, city officials, and stakeholders.
+
+### Monitoring and Logging
+
+#### AWS CloudWatch:
+- **Resource Monitoring:**
+   - Monitor the performance of Glue jobs, Athena queries, and QuickSight dashboards.
+   - Set up CloudWatch Alarms to notify the team of any unusual activity or errors.
+- **Cost Management:**
+   - Track the cost of AWS resources used in the project.
+   - Set up billing alerts to stay within the project budget.
+
+#### AWS CloudTrail:
+-**Audit Logging:**
+   - Record all API calls and user activities across AWS services.
+   - Maintain logs of who accessed or modified data, which is essential for compliance and security audits.
+-**Security Analysis:**
+   - Use CloudTrail logs to detect unauthorized access attempts or suspicious activities.
+   - Integrate with AWS Security Hub for advanced threat detection.
 
 #### Project Insights and Trends:
 - **Permit Processing Efficiency:**
