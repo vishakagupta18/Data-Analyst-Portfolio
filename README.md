@@ -84,6 +84,7 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
 - SQL queries used in **AWS Athena** to analyze the dataset.
 - A presentation summarizing the insights and findings for university stakeholders or peers.
 
+--- 
 
 ## Project 2: Descriptive Analysis Using AWS Services
 
@@ -154,6 +155,8 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
 - A detailed **report** summarizing insights, findings, and construction trends.
 - **Visualizations** in AWS QuickSight showcasing key project trends and metrics.
 - A **presentation** for stakeholders with visual dashboards to guide city planning and development strategy.
+
+--- 
 
 ## Project 3: Diagnostic Analysis Using AWS Services
 
@@ -286,6 +289,8 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 - **Expected completion**: 6 weeks.
 - Regular check-ins and status reports will be provided to ensure alignment with stakeholders' objectives and to address any emerging challenges.
 
+--- 
+
 ## Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services
 
 ### Project Title: Data Wrangling of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
@@ -381,6 +386,8 @@ The primary objective of this project is to perform comprehensive data wrangling
 - Week 8: Presentation of findings and project handover.
 
 This data wrangling project ensures the preparation of a high-quality dataset that enables the university to conduct detailed analysis of enrollment patterns, helping improve student retention strategies, optimize academic offerings, and enhance overall operational efficiency.
+
+--- 
 
 ## Project 5: Data Quality Control Analysis for City of Vancouver Building Permits
 
