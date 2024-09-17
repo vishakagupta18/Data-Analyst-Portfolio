@@ -124,6 +124,8 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
   - Calculating project timelines (permit elapsed days).
   - Categorizing the types of construction work, property use, and contractor activities.
 
+![Data Lineage Diagram](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/e407c054a7e06fbaa72c1bc7d6fce3c9cec05f66/images/DescriptiveDLD.jpg)
+
 ##### 3. **Data Querying:**
 - **Amazon Athena** is used to query the processed data. The following insights are derived through SQL queries:
   - Average project value categorized by property use type.
