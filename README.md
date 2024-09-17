@@ -422,35 +422,35 @@ Queries in AWS Athena were designed to explore different dimensions of the datas
 #### 5. Data Visualization:
 
 ##### 1. Permit Processing Time by Project Type:
-- **Visualization Tool**: AWS QuickSight / Tableau
-- **Type of Visualization**: Bar Chart
-- **Description**: 
-  - This bar chart presents the **average time** taken to issue permits for different types of work (e.g., Residential, Commercial, Industrial).
-  - It provides a comparative view of processing times, helping identify which project types experience longer delays.
+   - **Visualization Tool**: AWS QuickSight / Tableau
+   - **Type of Visualization**: Bar Chart
+   - **Description**: 
+     - This bar chart presents the **average time** taken to issue permits for different types of work (e.g., Residential, Commercial, Industrial).
+     - It provides a comparative view of processing times, helping identify which project types experience longer delays.
   
 ##### 2. Geographic Distribution of Permits
-- **Visualization Tool**: AWS QuickSight / Tableau
-- **Type of Visualization**: Map
-- **Description**:
-  - A map was created to **visualize the geographical distribution** of building permits across downtown Vancouver.
-  - The map is **color-coded** to distinguish between various permit categories such as **residential**, **commercial**, and **other types of permits**.
-  - This visualization highlights areas with high development activity, offering a clear view of where major construction projects are concentrated within the downtown region.
-  - This tool enables stakeholders to better understand urban development trends and identify zones of higher development density.
+   - **Visualization Tool**: AWS QuickSight / Tableau
+   - **Type of Visualization**: Map
+   - **Description**:
+     - A map was created to **visualize the geographical distribution** of building permits across downtown Vancouver.
+     - The map is **color-coded** to distinguish between various permit categories such as **residential**, **commercial**, and **other types of permits**.
+     - This visualization highlights areas with high development activity, offering a clear view of where major construction projects are concentrated within the downtown region.
+     - This tool enables stakeholders to better understand urban development trends and identify zones of higher development density.
 
 ##### 3. Top 10 Projects by Value
-- **Visualization Tool**: AWS QuickSight / Tableau
-- **Type of Visualization**: Pie Chart
-- **Description**:
-  - A **pie chart** was used to present the **top 10 most expensive projects** based on their project value in Canadian dollars (CAD).
-  - Each slice of the pie chart represents a high-value project, providing a comparative view of the **largest financial investments** in downtown Vancouver's construction activities.
-  - This visualization helps in identifying the **major developments** in the region and where substantial resources are being allocated, giving insights into the most significant projects shaping Vancouver’s urban landscape.
+   - **Visualization Tool**: AWS QuickSight / Tableau
+   - **Type of Visualization**: Pie Chart
+   - **Description**:
+     - A **pie chart** was used to present the **top 10 most expensive projects** based on their project value in Canadian dollars (CAD).
+     - Each slice of the pie chart represents a high-value project, providing a comparative view of the **largest financial investments** in downtown Vancouver's construction activities.
+     - This visualization helps in identifying the **major developments** in the region and where substantial resources are being allocated, giving insights into the most significant projects shaping Vancouver’s urban landscape.
 
 ##### 4. Trends in Permit Issuance
-- **Visualization Tool**: AWS QuickSight / Tableau
-- **Type of Visualization**: Line Chart
-- **Description**:
-  - A **line chart** was developed to visualize the **trends in building permit issuance** over time, with data broken down by month and year.
-  - The chart highlights **fluctuations in permit issuance**, allowing for the observation of seasonal patterns or potential **impacts of city policies** on the frequency of permit applications.
-  - This visualization is key in understanding the rhythm of urban development and identifying **periods of higher or lower construction activity**, which can inform future urban planning and resource allocation.
+   - **Visualization Tool**: AWS QuickSight / Tableau
+   - **Type of Visualization**: Line Chart
+   - **Description**:
+     - A **line chart** was developed to visualize the **trends in building permit issuance** over time, with data broken down by month and year.
+     - The chart highlights **fluctuations in permit issuance**, allowing for the observation of seasonal patterns or potential **impacts of city policies** on the frequency of permit applications.
+     - This visualization is key in understanding the rhythm of urban development and identifying **periods of higher or lower construction activity**, which can inform future urban planning and resource allocation.
 
 
