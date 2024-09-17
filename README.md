@@ -15,7 +15,7 @@ Overview of my projects
 
 ### Project Title: Enrollment and Withdrawal Trends Analysis at University Canada West Using AWS
 
-![Data Exploration Steps](https://github.dev/vishakagupta18/Data-Analyst-Portfolio/blob/6c25b5596083ff8e3e088ea16fee5e1514052302/DataExploration.jpg)
+![Data Exploration Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/main/DataExploration.jpg)
 
 #### Project Description: ####
 This project aims to perform an exploratory data analysis (EDA) of the University's Enrollment and Withdrawal dataset using AWS services to uncover insights related to student enrollment patterns, program distribution, and retention rates. By leveraging AWS tools such as S3, AWS Glue, and Athena, we explore trends based on features like gender, academic programs, and enrollment status. This project demonstrates how cloud-based services streamline large-scale data analysis and visualization.
