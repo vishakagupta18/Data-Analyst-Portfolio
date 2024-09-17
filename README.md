@@ -244,7 +244,7 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 
 ## [Project 4: Data Wrangling for University Enrollment Analysis Using AWS Services](https://www.google.com)
 
-### Project Title: Diagnostic Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
+### Project Title: Diagnostic Wrangling of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
 ![Data Wrangling Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/455663b84ecfec67c5f3ba6bb3a5dce3bbd4b27f/images/DataExplorationUCW.png)
 
@@ -252,7 +252,7 @@ The primary goal of this project is to conduct a diagnostic analysis of building
 This project involves performing data wrangling on a dataset of student enrollments at the University. The goal is to clean, transform, and consolidate the student data for enhanced analysis and reporting. The analysis uses AWS services such as S3 for data storage, Glue for ETL, and Athena for querying the data. The wrangled dataset will be used to gain insights into student enrollment trends, graduation timelines, and program distribution, aiding the university in decision-making processes.
 
 #### Objective:
-The primary objective of this project is to perform comprehensive data wrangling on the university’s enrollment dataset. By cleaning and transforming the data, the goal is to improve its usability and accuracy, enabling further descriptive analysis of enrollment patterns, graduation rates, and student demographics.
+The primary objective of this project is to perform comprehensive data wrangling on the university’s enrollment dataset. By cleaning and transforming the data, the goal is to improve its usability and accuracy, enabling further descriptive analysis of enrollment patterns, graduation rates, and student demographics. It aims to transform raw data into actionable insights that can inform university administration about key academic metrics.
 
 #### Dataset Key Features:
 - **StudentID:** Unique identifier for each student.
@@ -292,39 +292,33 @@ The primary objective of this project is to perform comprehensive data wrangling
 
 #### Methodology:
 
-1. **Data Collection:**
-   - The student enrollment dataset is ingested into S3 in CSV format.
-
-2. **Data Assessment:**
-   - Conduct an initial assessment of the dataset to identify issues such as missing values, duplicate records, and format inconsistencies.
-   - Document data types and assess any discrepancies across key fields like `Status` and `Program`.
-
-3. **Data Cleaning:**
-   - Address any missing values or data inconsistencies.
-   - Remove duplicate records if present.
-   - Standardize categorical variables such as `Gender` and `Status`.
-   - Ensure consistency in date formats.
-
-4. **Data Transformation:**
-   - Convert string fields into appropriate data types (e.g., convert date strings to `datetime` objects).
-   - Calculate new features such as `EnrollmentDuration` (time between `EnrollmentDate` and `ExpectedGraduationDate`).
-   - Perform data aggregations, such as counting the number of students by program or calculating the average graduation time.
-
-5. **Data Consolidation:**
-   - Consolidate all relevant information into a unified dataset for further analysis.
-   - Ensure that key identifiers such as `StudentID` are consistently used for accurate linkage across records.
-
-6. **Validation:**
-   - Conduct exploratory data analysis (EDA) to validate the accuracy and completeness of the wrangled dataset.
-   - Perform checks on the cleaned dataset for consistency across fields like `Gender`, `Program`, and `Status`.
+1. **Discover**
+- **Understanding the Data**: Conducted an initial assessment to comprehend the structure, data types, and content of the dataset. Key features include          StudentID, Name, DateOfBirth, Gender, Program, EnrollmentDate, GraduationDate, and Status.
+- **Exploratory Data Analysis (EDA)**: Identified missing values, anomalies, and outliers to understand data quality and distribution.
+2. **Structure**
+- **Organize Data**: Defined schemas and data types for each field in the dataset, ensuring that dates, numerical fields, and categorical variables were          properly formatted.
+- **Format Data**: Standardized formats for dates and categorical variables, particularly focusing on consistency in fields such as EnrollmentDate,             GraduationDate, and Program.
+3. **Clean**
+- **Handle Missing Values**: Used imputation techniques for non-essential fields or removed records with missing essential fields.
+- **Remove Duplicates**: Eliminated duplicate entries based on StudentID.
+- **Correct Errors**: Corrected inconsistencies in data entries, including typos in Program names and inaccurate Status fields.
+4. **Enrich**
+- **Feature Engineering**:
+   - Calculated EnrollmentDuration by finding the difference between EnrollmentDate and GraduationDate.
+   - Derived Age from DateOfBirth.
+   - Standardized categorical variables by normalizing entries in Gender, Status, and Program.
+5. **Validate**
+- **Data Consistency Checks**: Ensured logical consistency, such as validating that EnrollmentDate precedes GraduationDate.
+- **Quality Assurance**: Conducted quality checks to verify that the data transformations preserved integrity and accuracy.
+6. **Publish**
+- **Curated Dataset**: Saved the cleaned and enriched dataset back to AWS S3 in a designated curated zone for further analysis.
+- **Documentation**: Recorded all data wrangling steps, decisions, and insights in a structured format for transparency and reproducibility.
 
 #### Tools and Technologies:
 - **AWS S3**: For data storage and retrieval.
 - **AWS Glue**: For data cleaning, transformation, and ETL operations.
 - **Amazon Athena**: For querying the dataset.
 - **AWS QuickSight**: For creating interactive dashboards and visualizations.
-- **Python (Pandas, NumPy)**: For additional data wrangling and validation tasks.
-- **Jupyter Notebook**: For documenting and running Python scripts.
 
 #### Deliverables:
 - **Cleaned Dataset**: A well-structured dataset in CSV format that has been cleaned and transformed for further analysis.
@@ -332,10 +326,13 @@ The primary objective of this project is to perform comprehensive data wrangling
 - **Visualizations**: Interactive dashboards built in AWS QuickSight that highlight key insights such as enrollment trends, gender distribution, and time-to-graduation.
 
 #### Timeline:
-- **Data Wrangling and Transformation**: 2 weeks
-- **Data Querying and Analysis**: 1 week
-- **Dashboard Creation in AWS QuickSight**: 1 week
-- **Final Report Preparation and Deliverables**: 1 week
+- Week 1-2: Data ingestion and initial discovery phase.
+- Week 3: Data structuring and cleaning using AWS Glue.
+- Week 4: Data enrichment and validation.
+- Week 5: Data analysis with Amazon Athena.
+- Week 6: Visualization development in AWS QuickSight.
+- Week 7: Compilation of documentation and final reports.
+- Week 8: Presentation of findings and project handover.
 
 This data wrangling project ensures the preparation of a high-quality dataset that enables the university to conduct detailed analysis of enrollment patterns, helping improve student retention strategies, optimize academic offerings, and enhance overall operational efficiency.
 
@@ -401,7 +398,7 @@ This project involves analyzing building permits issued in Vancouver's downtown 
       - **Uniqueness**: Checking for duplicates to maintain more than 80% uniqueness (e.g., ensuring there are no duplicate PermitNumbers).
       - **Freshness**: Verifying that the data is recent, particularly for ongoing projects (e.g., ensuring PermitElapsedDays is up to date).
       - **Valid Value Checks**: Ensuring data consistency (e.g., PermitCategory should only contain predefined categories like "Residential" or "Commercial").
-- **Load**: Store the transformed dataset back into AWS S3 for analysis.
+- **Load**: Store the transformed dataset back into AWS S3 Trusted Zone for analysis.
 - **Scheduled ETL**: The ETL job is scheduled to run weekly on Sundays at 11:59 PM, ensuring that the dataset is regularly updated and refreshed in AWS S3. The job is part of an automated workflow 
     triggered on a weekly basis, keeping the data analysis up-to-date.
 
