@@ -87,7 +87,7 @@ The objective is to analyze student enrollment and withdrawal patterns using AWS
 
 ### Project Title: Descriptive Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Descriptive Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/04598aae1d1a96b947b1e318c8ec108e592e21c4/images/DescriptiveAnalysis.png)
+![Descriptive Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/d464a27f70b6f16f85073b1ca7e56da7a37cc1ef/images/DescriptiveAnalysis.png)
 
 #### Project Overview:
 This project focuses on analyzing building permits issued in Vancouver's downtown region during the years 2023 and 2024. The goal is to gain insights into the types of construction projects, timelines for permit issuance, project values, and trends influencing urban development in the city. The project leverages AWS services such as S3 for data storage, Glue for ETL processes, Athena for querying, and QuickSight for data visualization.
@@ -159,7 +159,7 @@ This project focuses on analyzing building permits issued in Vancouver's downtow
 
 ### Project Title: Diagnostic Analysis of City of Vancouver Issued Building Permits in the Downtown Region (2023-2024) Using AWS
 
-![Diagnostic Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/452756704ad30dc1af6e594028bc4148b941ca22/images/DiagnosticAnalysis.png)
+![Diagnostic Analysis Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/d464a27f70b6f16f85073b1ca7e56da7a37cc1ef/images/DiagnosticAnalysis.png)
 
 #### Project Overview:
 This project focuses on the diagnostic analysis of building permits issued in the downtown region of Vancouver during 2023 and 2024. The objective is to uncover insights into the types of work being performed, permit timelines, project values, and other key factors affecting construction trends in the city. The analysis is powered by AWS services like S3 for data storage, Glue for data cleaning and transformation, Athena for querying, and QuickSight for visualization.
