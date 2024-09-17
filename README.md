@@ -15,7 +15,7 @@ Overview of my projects
 
 ### Project Title: Enrollment and Withdrawal Trends Analysis at University Canada West Using AWS
 
-![Data Exploration Steps](https://github.com/vishakagupta18/Data-Analyst-Portfolio/blob/main/DataExploration.jpg)
+![Data Exploration Steps](./images/DiagnosticAnalysis.png)
 abc
 <img src="./images/DiagnosticAnalysis.png" />
 
